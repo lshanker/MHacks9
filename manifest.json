@@ -1,5 +1,7 @@
 {
   "name": "TwitterTombstone",
+  "icons": {
+          "128": "disable.png" },
   "description": "Hides tweets containing quotes from a person you've blocked.",
   "version": "2.0",
   "background": {
@@ -18,8 +20,9 @@
     "activeTab", "http://twitter.com/*", "https://ajax.googleapis.com/"
   ],
 
-  "page_action": {
+  "browser_action": {
     "default_title": "Hiding quotes from the people you've blocked!"
   },
+
   "manifest_version": 2
 }
