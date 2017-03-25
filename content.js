@@ -1,6 +1,4 @@
-console.log("Content page log");
-
-//Send a one time message to the background page
-chrome.runtime.sendMessage({greeting: "hello from the content side"}, function(response){
-  console.log(response.farewell);
-})
+var el = document.getElementsByClassName( 'Tombstone' );
+for(i =0; i<el.length; i++){
+  el[i].parentNode.style.display = 'none';
+}

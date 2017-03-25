@@ -1,8 +1,8 @@
 {
-  "name": "RetweetBlock",
-  "version": "1.0",
-  "description": "Blocks retweets by a person you've blocked on Twitter.",
-  "content_scripts": [
+  "name": "Page Redder",
+  "description": "Make the current page red",
+  "version": "2.0",
+  "content_scripts":[
     {
       "matches": [
         "https://twitter.com/*"
@@ -10,17 +10,12 @@
       "js": ["content.js"]
     }
   ],
-  "background": {
-    "scripts": ["background.js"],
-    "persistent": true
-  },
-  "page_action" :
-  {
-    "default_title" : "RetweetBlock"
-  },
-  "permissions" : [
-    "activeTab",
-   "https://ajax.googleapis.com/"
+  "permissions": [
+    "activeTab", "http://twitter.com/*", "https://ajax.googleapis.com/"
   ],
+
+  "page_action": {
+    "default_title": "Make this page red"
+  },
   "manifest_version": 2
 }
