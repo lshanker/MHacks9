@@ -10,7 +10,7 @@ function get_nonce(){
 var orig_nonce = get_nonce();
 var cur_nonce = get_nonce();
 
-setInterval(function(){
+var repeat = setInterval(function(){
   cur_nonce = get_nonce();
   console.log(cur_nonce);
   if(orig_nonce==cur_nonce){
@@ -34,5 +34,8 @@ chrome.runtime.onMessage.addListener(
       for(i =0; i<el.length; i++){
           el[i].parentNode.style.display = 'none';
       }
+    }
+    if(request.power!=null && request.power == 'off'){
+      clearInterval(repeat);
     }
   });
