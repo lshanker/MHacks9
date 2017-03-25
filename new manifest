@@ -1,0 +1,21 @@
+{
+  "name": "Page Redder",
+  "description": "Make the current page red",
+  "version": "2.0",
+  "content_scripts":[
+    {
+      "matches": [
+        "https://twitter.com/*"
+      ],
+      "js": ["content.js"]
+    }
+  ],
+  "permissions": [
+    "activeTab", "http://twitter.com/*", "https://ajax.googleapis.com/"
+  ],
+
+  "page_action": {
+    "default_title": "Make this page red"
+  },
+  "manifest_version": 2
+}
