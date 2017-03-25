@@ -1,6 +1,6 @@
 {
-  "name": "Page Redder",
-  "description": "Make the current page red",
+  "name": "TwitterTombstone",
+  "description": "Hides tweets containing quotes from a person you've blocked.",
   "version": "2.0",
   "content_scripts":[
     {
@@ -15,7 +15,7 @@
   ],
 
   "page_action": {
-    "default_title": "Make this page red"
+    "default_title": "Hiding quotes from the people you've blocked!"
   },
   "manifest_version": 2
 }
