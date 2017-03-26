@@ -1,7 +1,9 @@
 {
   "name": "Twitter Block + Quotes",
   "icons": {
-          "128": "disable.png" },
+          "16": "icon16.png",
+          "48": "2icon48.png",
+          "128": "2icon128.png" },
   "description": "Hides tweets containing quotes from a person you've blocked.",
   "version": "1.0",
   "background": {

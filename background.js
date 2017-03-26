@@ -24,7 +24,7 @@ chrome.browserAction.onClicked.addListener(function (tab) {
  enable = enable ? false : true;
  if(enable){
   //turn on...
-  chrome.browserAction.setIcon({ path: 'icon.png' });
+  chrome.browserAction.setIcon({ path: '2icon48.png' });
   chrome.browserAction.setBadgeText({ text: 'ON' });
   on = true;
   chrome.tabs.getSelected(null, function(tab) {
