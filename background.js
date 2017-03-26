@@ -2,6 +2,7 @@
 
 var on = true;
 
+
 chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
     console.log("TAB CHANGE");
     if(on){
