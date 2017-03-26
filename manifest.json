@@ -1,5 +1,6 @@
 {
   "name": "Twitter Block + Quotes",
+  "short_name": "Block + Quotes",
   "icons": {
           "16": "icon16.png",
           "48": "2icon48.png",
