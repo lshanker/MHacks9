@@ -5,7 +5,7 @@
           "48": "2icon48.png",
           "128": "2icon128.png" },
   "description": "Hides tweets containing quotes from a person you've blocked.",
-  "version": "1.0",
+  "version": "1.01",
   "background": {
    "scripts": ["background.js"],
    "persistent": true
